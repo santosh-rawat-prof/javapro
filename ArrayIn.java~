@@ -1,0 +1,39 @@
+import java.util.*;
+
+class ArrayIn
+{
+    public static void main(String args[])
+    {
+	Scanner scan = new Scanner(System.in);
+
+	System.out.print("\n Enter any 10 numbers: ");
+	int i = 0;
+	int arr[] = new int[10];
+
+	while(i<10)
+	    {
+		arr[i] = scan.nextInt();
+		i++;
+	    }
+	i--;
+
+	int j = 0, s = 0;
+
+	while(i>=0)
+	    {
+		while(j<10)
+		    {
+			if(arr[i] >= arr[j])
+			    {
+				j++;
+				s = arr[i];
+			    }
+			else
+			    break;
+		    }
+		i--;
+	    }
+	System.out.println("\n Largest number is : " + s);
+    }
+    
+}

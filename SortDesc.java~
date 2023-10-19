@@ -1,0 +1,50 @@
+import java.util.*;
+
+class SortDesc
+{
+    public static void main(String[] args)
+    {
+	Scanner scan = new Scanner(System.in);
+
+	int arr[] = new int[10];
+	int i = 0;
+
+	System.out.print("\n Enter any 10 numbers : ");
+
+	while(i < 10)
+	    {
+		arr[i] = scan.nextInt();
+		i++;
+	    }
+	
+	i = 0;
+
+	int j , temp = 0;
+
+	while(i < 10)
+	    {
+		j = i + 1;
+		while(j < 10)
+		    {
+			if(arr[i] > arr[j])
+			    {
+				temp = arr[j];
+				arr[j] = arr[i];
+				arr[i] = temp;
+			    }
+			j++;
+		    }
+		i++;
+	    }
+
+	System.out.print("\n After arranging in descending order the numbers are:");
+	i = 0;
+
+	while(i < 10)
+	    {
+		System.out.print(" " + arr[i]);
+		i++;
+	    }
+	System.out.println();
+    }
+}

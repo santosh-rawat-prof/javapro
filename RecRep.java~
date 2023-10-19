@@ -1,0 +1,23 @@
+import java.util.*;
+
+class RecRep
+{
+    public static void main(String[] args)
+    {
+	Scanner scan = new Scanner(System.in);
+
+	System.out.print("\n How many times you want to print your name: ");
+	int n = scan.nextInt();
+
+	f( 1, n);
+    }
+
+    void f(int i,int n )
+    {
+	if( i > n )
+	    return;
+
+	System.out.print("\n Santosh\n\n");
+	f( i + 1, n);
+    }
+}

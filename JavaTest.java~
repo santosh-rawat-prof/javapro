@@ -1,0 +1,46 @@
+class JavaTest
+{
+    /* public static void main(String[] args)
+    {
+	int x = 5;
+	int y = 50;
+
+	while(x <= y)
+	    {
+		x = y/x;
+		System.out.println("Infinite");
+	    }
+	    }*/
+
+    /* public static void main(String[] args)
+    {
+	int m = 1;
+	do
+	    {
+		System.out.println("Test");
+		m = m + 2;
+	    }
+	while(m<10);
+	
+	}*/
+     public static void main(String[] args)
+    {
+        double i;
+	for( i =0; i <= 5; i = i + 2/3.0)
+	    {
+		System.out.println("Test");
+	    }
+	    }
+    /*public static void main(String[] args)
+    {
+	int m = 10;
+	int n = 7;
+
+	while( m % n >= 0)
+	    {
+		m = m + 1;
+		n = n + 2;
+		System.out.println("Test");
+	    }
+	    }*/
+}

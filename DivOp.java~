@@ -1,0 +1,31 @@
+// WAP to divide any two numbers without using division ( / ) operator
+
+import java.util.*;
+
+class DivOp
+{
+    public static void main(String[] args)
+    {
+	Scanner scan = new Scanner(System.in);
+
+	System.out.print("\n Enter any two numbers for devision: ");
+	int a = scan.nextInt();
+	int b = scan.nextInt();
+
+	int div = a, count = 0, org = a;
+
+	if( b == 0)
+	    {
+		System.out.print("\n You enetered 0 in denominator therefore value is undefined\n\n");
+		return;
+	    }
+
+	while( div >= b)
+	    {
+		div = a - b;
+		a = div;
+		count ++;
+	    }
+	System.out.print("\n After dividing " + org + " by " + b + " we get : " + count + "\n\n");
+    }
+}
